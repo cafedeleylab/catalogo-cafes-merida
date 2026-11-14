@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07090e">
+  <meta name="description" content="La selección de cafés de Café de Ley: Wilton Benítez, Expresiones y UBA. Explora variedades, procesos y notas sensoriales.">
+  <link rel="canonical" href="https://cafe-de-ley-seleccion-cafes.cafedeley-lab.chatgpt.site/">
+  <meta property="og:site_name" content="Café de Ley">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:title" content="Cafés para descubrir · Café de Ley">
+  <meta property="og:description" content="Wilton Benítez, Expresiones y UBA. Conoce nuestra selección de cafés.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cafe-de-ley-seleccion-cafes.cafedeley-lab.chatgpt.site/">
+  <meta property="og:image" content="https://cafe-de-ley-seleccion-cafes.cafedeley-lab.chatgpt.site/og-catalogo-cafes.png">
+  <meta property="og:image:secure_url" content="https://cafe-de-ley-seleccion-cafes.cafedeley-lab.chatgpt.site/og-catalogo-cafes.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Catálogo de cafés de Café de Ley con bolsas de Wilton Benítez">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cafés para descubrir · Café de Ley">
+  <meta name="twitter:description" content="Wilton Benítez, Expresiones y UBA. Conoce nuestra selección de cafés.">
+  <meta name="twitter:image" content="https://cafe-de-ley-seleccion-cafes.cafedeley-lab.chatgpt.site/og-catalogo-cafes.png">
+  <meta name="twitter:image:alt" content="Catálogo de cafés de Café de Ley con bolsas de Wilton Benítez">
+  <title>Catálogo de cafés · Café de Ley</title>
+  <link rel="icon" type="image/png" href="./logo-cafe-de-ley-blanco.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./cafes.css">
+  <script src="./products.js" defer></script>
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#catalogo">Saltar al catálogo</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="header-brand" href="#top" aria-label="Café de Ley, inicio"><img src="./logo-cafe-de-ley-blanco.png" alt="Café de Ley" width="66" height="66"></a>
+    <a class="header-link" href="#catalogo">Explorar cafés <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="hero-kicker">SELECCIÓN DE CAFÉS · CAFÉ DE LEY</p>
+        <img class="hero-logo" src="./logo-cafe-de-ley-blanco.png" alt="" width="150" height="150">
+        <h1 id="hero-title">Cafés para<br><span>descubrir.</span></h1>
+        <p class="hero-description">Tres marcas, distintas formas de expresar el café.<br>Encuentra tu próxima taza entre variedades, procesos y notas sensoriales.</p>
+        <a href="#wilton" class="hero-cta">Descubre Wilton Benítez <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-line" aria-hidden="true"></div>
+    </section>
+    <section class="catalog" id="catalogo" aria-labelledby="catalog-title">
+      <div class="catalog-header">
+        <p class="section-kicker">WILTON BENÍTEZ · EXPRESIONES · UBA</p>
+        <h2 id="catalog-title">Catálogo de cafés<span>.</span></h2>
+        <p class="catalog-note">Conoce cada café, explora su perfil y consulta las unidades disponibles.</p>
+      </div>
+      <div class="filter-bar" role="group" aria-label="Filtrar cafés por marca">
+        <button class="filter-chip active" type="button" data-family="Todos" aria-pressed="true">Todos <span>16</span></button>
+        <button class="filter-chip" type="button" data-family="Wilton" aria-pressed="false">Wilton Benítez <span>5</span></button>
+        <button class="filter-chip" type="button" data-family="Expresiones" aria-pressed="false">Expresiones <span>5</span></button>
+        <button class="filter-chip" type="button" data-family="UBA" aria-pressed="false">UBA <span>6</span></button>
+      </div>
+      <p class="photo-note" id="catalog-status" role="status" aria-live="polite">16 cafés · 3 marcas</p>
+      <div id="catalog-groups"></div>
+      <noscript><p>Activa JavaScript para explorar las 16 fichas del catálogo.</p></noscript>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© Café de Ley</span><span>Wilton Benítez · Expresiones · UBA</span><a href="#top">Volver arriba ↑</a></footer>
+  <dialog id="photo-dialog" aria-labelledby="photo-title">
+    <div class="dialog-bar"><h2 id="photo-title">Fotografía del café</h2><button id="close-photo" type="button" aria-label="Cerrar fotografía">×</button></div>
+    <img id="expanded-photo" alt="">
+  </dialog>
+</body>
+</html>
